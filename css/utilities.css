@@ -16,6 +16,10 @@ body {
     overflow-x: hidden;
 }
 
+body.loaded {
+    overflow-y: auto;
+}
+
 img {
     display: block;
     max-width: 100%;
