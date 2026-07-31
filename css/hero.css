@@ -367,8 +367,8 @@ z-index:20;
 .hero-image-box::after{
 content:"React";
 position:absolute;
-bottom:30px;
-right:-30px;
+bottom:150px;
+right:-50px;
 padding:10px 18px;
 border-radius:50px;
 background:rgba(255,255,255,.05);
@@ -437,4 +437,71 @@ background:#1877f2;
 .hero-social a:nth-child(4):hover{
 color:#fff;
 background:#e4405f;
+}
+/*==============================
+Floating Cards
+==============================*/
+
+.floating-card{
+position:absolute;
+display:flex;
+align-items:center;
+gap:15px;
+padding:15px 20px;
+background:rgba(255,255,255,.06);
+border:1px solid rgba(255,255,255,.1);
+backdrop-filter:blur(18px);
+-webkit-backdrop-filter:blur(18px);
+border-radius:18px;
+box-shadow:0 15px 35px rgba(0,0,0,.25);
+z-index:20;
+animation:float 5s ease-in-out infinite;
+transition:var(--transition);
+}
+
+.floating-card:hover{
+transform:translateY(-10px) scale(1.05);
+box-shadow:0 20px 40px rgba(99,102,241,.35);
+}
+
+.floating-card i{
+width:50px;
+height:50px;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:50%;
+background:linear-gradient(135deg,var(--primary-color),var(--secondary-color));
+color:#fff;
+font-size:1.3rem;
+}
+
+.floating-card h4{
+font-size:1.2rem;
+font-weight:700;
+color:var(--text-color);
+margin-bottom:3px;
+}
+
+.floating-card p{
+font-size:.85rem;
+color:var(--text-muted);
+}
+
+.card-1{
+top:30px;
+right:-80px;
+animation-delay:0s;
+}
+
+.card-2{
+bottom:80px;
+left:-100px;
+animation-delay:1.5s;
+}
+
+.card-3{
+bottom:-20px;
+right:-40px;
+animation-delay:3s;
 }
