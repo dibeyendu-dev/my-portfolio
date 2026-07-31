@@ -290,3 +290,151 @@ height:460px;
 border-bottom:4px solid var(--accent-color);
 animation-duration:20s;
 }
+/*==============================
+Hero Scroll
+==============================*/
+
+.hero-scroll{
+margin-top:70px;
+display:flex;
+justify-content:center;
+align-items:center;
+position:relative;
+z-index:10;
+}
+
+.hero-scroll a{
+display:flex;
+flex-direction:column;
+align-items:center;
+gap:10px;
+color:var(--text-light);
+font-size:.95rem;
+font-weight:500;
+transition:var(--transition);
+}
+
+.hero-scroll i{
+width:55px;
+height:55px;
+display:flex;
+justify-content:center;
+align-items:center;
+border-radius:50%;
+background:rgba(255,255,255,.05);
+border:1px solid var(--border-color);
+backdrop-filter:blur(15px);
+-webkit-backdrop-filter:blur(15px);
+font-size:1.3rem;
+color:var(--primary-color);
+animation:bounce 2s infinite;
+transition:var(--transition);
+}
+
+.hero-scroll a:hover{
+color:var(--primary-color);
+}
+
+.hero-scroll a:hover i{
+background:linear-gradient(135deg,var(--primary-color),var(--secondary-color));
+color:#fff;
+transform:translateY(-8px);
+box-shadow:0 15px 35px rgba(99,102,241,.45);
+}
+
+/*==============================
+Floating Tech Icons
+==============================*/
+
+.hero-image-box::before{
+content:"HTML";
+position:absolute;
+top:10px;
+left:-20px;
+padding:10px 18px;
+border-radius:50px;
+background:rgba(255,255,255,.05);
+border:1px solid var(--border-color);
+backdrop-filter:blur(15px);
+-webkit-backdrop-filter:blur(15px);
+color:#ff6b35;
+font-size:.85rem;
+font-weight:600;
+animation:float 4s ease-in-out infinite;
+z-index:20;
+}
+
+.hero-image-box::after{
+content:"React";
+position:absolute;
+bottom:30px;
+right:-30px;
+padding:10px 18px;
+border-radius:50px;
+background:rgba(255,255,255,.05);
+border:1px solid var(--border-color);
+backdrop-filter:blur(15px);
+-webkit-backdrop-filter:blur(15px);
+color:#61dafb;
+font-size:.85rem;
+font-weight:600;
+animation:float 5s ease-in-out infinite;
+animation-delay:1s;
+z-index:20;
+}
+
+/*==============================
+Hero Hover Effects
+==============================*/
+
+.hero-title{
+transition:var(--transition);
+}
+
+.hero-title:hover{
+transform:translateY(-5px);
+}
+
+.hero-description{
+transition:var(--transition);
+}
+
+.hero-description:hover{
+color:var(--text-light);
+}
+
+.hero-image-box:hover .ring-1{
+animation-duration:6s;
+}
+
+.hero-image-box:hover .ring-2{
+animation-duration:8s;
+}
+
+.hero-image-box:hover .ring-3{
+animation-duration:10s;
+}
+
+.hero-image-box:hover .image-glow{
+opacity:.7;
+}
+
+.hero-social a:nth-child(1):hover{
+color:#fff;
+background:#24292e;
+}
+
+.hero-social a:nth-child(2):hover{
+color:#fff;
+background:#0a66c2;
+}
+
+.hero-social a:nth-child(3):hover{
+color:#fff;
+background:#1877f2;
+}
+
+.hero-social a:nth-child(4):hover{
+color:#fff;
+background:#e4405f;
+}
