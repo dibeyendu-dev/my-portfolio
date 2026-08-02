@@ -185,3 +185,24 @@ font-size:.97rem;
 line-height:1.8;
 color:var(--text-muted);
 }
+.timeline-item.left .timeline-card::after{
+content:"";
+position:absolute;
+top:50%;
+right:-16px;
+width:16px;
+height:3px;
+background:var(--primary-color);
+transform:translateY(-50%);
+}
+
+.timeline-item.right .timeline-card::after{
+content:"";
+position:absolute;
+top:50%;
+left:-16px;
+width:16px;
+height:3px;
+background:var(--primary-color);
+transform:translateY(-50%);
+}
