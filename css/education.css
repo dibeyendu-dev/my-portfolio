@@ -279,3 +279,18 @@ animation-delay:.6s;
 .timeline-item:nth-child(5){
 animation-delay:.8s;
 }
+@keyframes pulseDot{
+
+0%{
+transform:translateY(-50%) scale(1);
+}
+
+50%{
+transform:translateY(-50%) scale(1.25);
+}
+
+100%{
+transform:translateY(-50%) scale(1);
+}
+
+}
