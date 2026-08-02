@@ -140,7 +140,22 @@ transparent
 );
 transition:.8s;
 }
-
+.timeline-year{
+display:inline-block;
+padding:10px 22px;
+margin-bottom:20px;
+border-radius:50px;
+background:linear-gradient(
+135deg,
+var(--primary-color),
+var(--secondary-color)
+);
+color:#fff;
+font-size:.9rem;
+font-weight:600;
+letter-spacing:1px;
+box-shadow:0 10px 25px rgba(99,102,241,.3);
+}
 .timeline-card:hover::before{
 left:100%;
 }
