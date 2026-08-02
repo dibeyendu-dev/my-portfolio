@@ -394,3 +394,48 @@ font-size:1.8rem;
 }
 
 }
+/*============================== Responsive Education ==============================*/
+
+@media screen and (max-width:992px){
+
+.timeline-line{
+left:25px;
+}
+
+.timeline-item{
+width:100%;
+left:0!important;
+padding-left:70px;
+padding-right:0;
+}
+
+.timeline-item.left .timeline-dot,
+.timeline-item.right .timeline-dot{
+left:14px;
+right:auto;
+}
+
+.timeline-item.left .timeline-card::after,
+.timeline-item.right .timeline-card::after{
+left:-16px;
+right:auto;
+}
+
+}
+
+@media screen and (max-width:576px){
+
+.timeline-card{
+padding:25px;
+}
+
+.timeline-card h3{
+font-size:1.3rem;
+}
+
+.timeline-year{
+font-size:.8rem;
+padding:8px 18px;
+}
+
+}
