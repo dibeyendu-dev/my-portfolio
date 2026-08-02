@@ -287,3 +287,110 @@ font-size:.8rem;
 }
 
 }
+/*============================== Responsive About ==============================*/
+
+@media screen and (max-width:992px){
+
+.about-wrapper{
+grid-template-columns:1fr;
+gap:70px;
+}
+
+.about-left{
+order:1;
+}
+
+.about-right{
+order:2;
+text-align:center;
+}
+
+.about-buttons{
+justify-content:center;
+}
+
+.about-info{
+grid-template-columns:repeat(2,1fr);
+}
+
+.about-image-box{
+width:380px;
+height:380px;
+}
+
+.about-image-box img{
+width:300px;
+height:300px;
+}
+
+.experience-badge{
+right:0;
+}
+
+}
+
+@media screen and (max-width:768px){
+
+.section-heading h2{
+font-size:2.3rem;
+}
+
+.about-right h2{
+font-size:2.2rem;
+}
+
+.about-image-box{
+width:320px;
+height:320px;
+}
+
+.about-image-box img{
+width:250px;
+height:250px;
+}
+
+.about-info{
+grid-template-columns:1fr;
+}
+
+.about-buttons{
+flex-direction:column;
+}
+
+.about-buttons .btn{
+width:100%;
+}
+
+}
+
+@media screen and (max-width:576px){
+
+.about-image-box{
+width:270px;
+height:270px;
+}
+
+.about-image-box img{
+width:210px;
+height:210px;
+}
+
+.experience-badge{
+padding:15px 20px;
+right:10px;
+bottom:20px;
+}
+
+.experience-badge h3{
+font-size:1.5rem;
+}
+
+.section-heading h2{
+font-size:2rem;
+}
+
+.about-right h2{
+font-size:1.8rem;
+}
+
+}
