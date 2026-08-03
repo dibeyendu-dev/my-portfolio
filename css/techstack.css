@@ -186,3 +186,12 @@ animation-delay:4s;
 animation:float 6s ease-in-out infinite;
 animation-delay:4.5s;
 }
+.tech-card:hover{
+background:rgba(255,255,255,.08);
+border:1px solid transparent;
+background-image:
+linear-gradient(var(--bg-color),var(--bg-color)),
+linear-gradient(135deg,var(--primary-color),var(--secondary-color),var(--accent-color));
+background-origin:border-box;
+background-clip:padding-box,border-box;
+}
