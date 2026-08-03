@@ -195,3 +195,84 @@ linear-gradient(135deg,var(--primary-color),var(--secondary-color),var(--accent-
 background-origin:border-box;
 background-clip:padding-box,border-box;
 }
+.tech-card{
+transform-style:preserve-3d;
+perspective:1000px;
+}
+
+.tech-card:hover{
+transform:
+translateY(-18px)
+rotateX(8deg)
+rotateY(-8deg)
+scale(1.03);
+}
+
+.tech-card img{
+transition:
+transform .6s ease,
+filter .6s ease;
+}
+
+.tech-card:hover img{
+transform:rotateY(360deg) scale(1.15);
+}
+
+.tech-card h3{
+transition:.4s;
+}
+
+.tech-card:hover h3{
+letter-spacing:1px;
+}
+
+/*==============================
+Animated Border
+==============================*/
+
+.tech-card::before{
+background:linear-gradient(
+90deg,
+transparent,
+rgba(255,255,255,.25),
+transparent
+);
+}
+
+/*==============================
+Tech Card Glow
+==============================*/
+
+.tech-card::after{
+content:"";
+position:absolute;
+inset:-2px;
+border-radius:25px;
+background:linear-gradient(
+135deg,
+var(--primary-color),
+var(--secondary-color),
+var(--accent-color)
+);
+z-index:-2;
+opacity:0;
+filter:blur(18px);
+transition:.5s;
+}
+
+.tech-card:hover::after{
+opacity:.7;
+}
+
+/*==============================
+Logo Shadow
+==============================*/
+
+.tech-card:hover img{
+
+filter:
+drop-shadow(0 0 10px rgba(255,255,255,.3))
+drop-shadow(0 0 25px var(--primary-color))
+drop-shadow(0 0 45px var(--secondary-color));
+
+}
