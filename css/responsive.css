@@ -439,3 +439,58 @@ padding:8px 18px;
 }
 
 }
+/*============================== Responsive Skills ==============================*/
+
+@media screen and (max-width:1200px){
+
+.skills-wrapper{
+grid-template-columns:repeat(3,1fr);
+}
+
+}
+
+@media screen and (max-width:768px){
+
+.skills-wrapper{
+grid-template-columns:repeat(2,1fr);
+}
+
+.skill-circle{
+width:120px;
+height:120px;
+}
+
+.skill-circle::before{
+width:90px;
+height:90px;
+font-size:1.8rem;
+}
+
+.skill-percent{
+font-size:1.3rem;
+}
+
+}
+
+@media screen and (max-width:576px){
+
+.skills-wrapper{
+grid-template-columns:1fr;
+}
+
+.skill-card{
+padding:30px 20px;
+}
+
+.skill-circle{
+width:110px;
+height:110px;
+}
+
+.skill-circle::before{
+width:82px;
+height:82px;
+font-size:1.6rem;
+}
+
+}
