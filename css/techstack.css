@@ -123,3 +123,18 @@ filter:
 drop-shadow(0 0 12px var(--primary-color))
 drop-shadow(0 0 30px var(--primary-color));
 }
+.tech-card::after{
+content:"";
+position:absolute;
+width:180px;
+height:180px;
+background:radial-gradient(circle,var(--primary-color),transparent 70%);
+opacity:0;
+filter:blur(60px);
+transition:.5s;
+z-index:0;
+}
+
+.tech-card:hover::after{
+opacity:.35;
+}
