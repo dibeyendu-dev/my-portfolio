@@ -494,3 +494,72 @@ font-size:1.6rem;
 }
 
 }
+/*============================== Responsive Tech Stack ==============================*/
+
+@media screen and (max-width:1200px){
+
+.tech-wrapper{
+
+grid-template-columns:repeat(4,1fr);
+
+}
+
+}
+
+@media screen and (max-width:992px){
+
+.tech-wrapper{
+
+grid-template-columns:repeat(3,1fr);
+
+}
+
+}
+
+@media screen and (max-width:768px){
+
+.tech-wrapper{
+
+grid-template-columns:repeat(2,1fr);
+
+gap:20px;
+
+}
+
+.tech-card{
+
+padding:25px 15px;
+
+}
+
+.tech-card img{
+
+width:65px;
+height:65px;
+
+}
+
+}
+
+@media screen and (max-width:576px){
+
+.tech-wrapper{
+
+grid-template-columns:1fr;
+
+}
+
+.tech-card img{
+
+width:70px;
+height:70px;
+
+}
+
+.tech-card h3{
+
+font-size:1.1rem;
+
+}
+
+}

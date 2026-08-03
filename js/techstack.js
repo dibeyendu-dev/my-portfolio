@@ -1,6 +1,4 @@
-/*==============================
-Tech Stack Animation
-==============================*/
+/*============================== Tech Stack Animation ==============================*/
 
 const techCards=document.querySelectorAll(".tech-card");
 
