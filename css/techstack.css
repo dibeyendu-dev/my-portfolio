@@ -276,3 +276,24 @@ drop-shadow(0 0 25px var(--primary-color))
 drop-shadow(0 0 45px var(--secondary-color));
 
 }
+.tech-card{
+
+background:
+linear-gradient(
+145deg,
+rgba(255,255,255,.05),
+rgba(255,255,255,.02)
+);
+
+}
+
+.tech-card:hover{
+
+background:
+linear-gradient(
+145deg,
+rgba(255,255,255,.08),
+rgba(255,255,255,.04)
+);
+
+}
