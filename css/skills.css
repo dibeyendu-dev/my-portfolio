@@ -187,3 +187,76 @@ Skills
 .skill-circle.git {
     background: conic-gradient(#f1502f 0deg 306deg, rgba(255, 255, 255, .08) 306deg);
 }
+
+/*============================== Skill Card Animation ==============================*/
+
+.skill-card {
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+.skill-card:hover {
+    transform: translateY(-15px) rotateX(8deg) rotateY(-8deg);
+}
+
+.skill-card:hover .skill-percent {
+    transform: scale(1.15);
+    color: var(--primary-color);
+}
+
+.skill-percent {
+    transition: var(--transition);
+}
+
+.skill-card:hover .skill-circle::before {
+    background: #0d1528;
+}
+
+/*============================== Floating Glow ==============================*/
+
+.skill-card::after {
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    background: radial-gradient(circle, var(--primary-color), transparent 70%);
+    opacity: 0;
+    filter: blur(60px);
+    transition: .5s;
+    z-index: -1;
+}
+
+.skill-card:hover::after {
+    opacity: .35;
+}
+
+/*============================== Skill Icon ==============================*/
+
+.skill-icon {
+    position: absolute;
+    font-size: 2.4rem;
+    z-index: 2;
+    color: #fff;
+    transition: var(--transition);
+}
+
+.skill-card:hover .skill-icon {
+    transform: scale(1.2) rotate(10deg);
+}
+
+.skill-circle::before {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Font Awesome 6 Brands";
+    font-size: 2.2rem;
+    color: #fff;
+}
+/*============================== Card Shine ==============================*/
+
+.skill-card:hover {
+    box-shadow:
+        0 0 20px rgba(99, 102, 241, .25),
+        0 0 40px rgba(99, 102, 241, .2),
+        0 25px 50px rgba(0, 0, 0, .35);
+}
