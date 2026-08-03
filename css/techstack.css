@@ -94,3 +94,32 @@ border-color:var(--primary-color);
 box-shadow:
 0 20px 50px rgba(99,102,241,.35);
 }
+.tech-card img{
+width:80px;
+height:80px;
+object-fit:contain;
+margin-bottom:25px;
+transition:transform .5s ease,filter .5s ease;
+filter:drop-shadow(0 0 12px rgba(255,255,255,.15));
+z-index:2;
+}
+
+.tech-card h3{
+font-size:1.2rem;
+font-weight:700;
+color:var(--text-color);
+margin-bottom:10px;
+transition:var(--transition);
+z-index:2;
+}
+
+.tech-card:hover h3{
+color:var(--primary-color);
+}
+
+.tech-card:hover img{
+transform:rotate(10deg) scale(1.15);
+filter:
+drop-shadow(0 0 12px var(--primary-color))
+drop-shadow(0 0 30px var(--primary-color));
+}
