@@ -126,3 +126,32 @@ transition:.5s ease;
 opacity:1;
 visibility:visible;
 }
+.project-btn{
+display:flex;
+align-items:center;
+gap:10px;
+padding:14px 24px;
+background:rgba(255,255,255,.08);
+border:1px solid rgba(255,255,255,.15);
+border-radius:50px;
+backdrop-filter:blur(15px);
+-webkit-backdrop-filter:blur(15px);
+color:#fff;
+font-size:.95rem;
+font-weight:600;
+transition:var(--transition);
+}
+
+.project-btn:hover{
+background:linear-gradient(
+135deg,
+var(--primary-color),
+var(--secondary-color)
+);
+transform:translateY(-6px);
+box-shadow:0 15px 35px rgba(99,102,241,.35);
+}
+
+.project-btn i{
+font-size:1rem;
+}
