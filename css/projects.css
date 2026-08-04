@@ -251,3 +251,130 @@ z-index:-1;
 .project-card:hover::after{
 opacity:.6;
 }
+/*==============================
+Project Premium Effects
+==============================*/
+
+.project-card{
+transform-style:preserve-3d;
+perspective:1200px;
+cursor:pointer;
+}
+
+.project-card:hover{
+transform:
+translateY(-18px)
+rotateX(6deg)
+rotateY(-6deg)
+scale(1.02);
+}
+
+/*==============================
+Project Image Gradient
+==============================*/
+
+.project-image::before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:
+linear-gradient(
+180deg,
+transparent,
+rgba(0,0,0,.25),
+rgba(0,0,0,.75)
+);
+opacity:0;
+transition:.5s;
+z-index:1;
+}
+
+.project-card:hover .project-image::before{
+opacity:1;
+}
+
+/*==============================
+Animated Border
+==============================*/
+
+.project-card{
+background:
+linear-gradient(var(--card-bg),var(--card-bg)) padding-box,
+linear-gradient(
+135deg,
+var(--primary-color),
+var(--secondary-color),
+var(--accent-color)
+) border-box;
+
+border:1px solid transparent;
+}
+
+/*==============================
+Project Shine
+==============================*/
+
+.project-card::before{
+content:"";
+position:absolute;
+top:0;
+left:-120%;
+width:60%;
+height:100%;
+background:
+linear-gradient(
+120deg,
+transparent,
+rgba(255,255,255,.25),
+transparent
+);
+transform:skewX(-25deg);
+transition:1s;
+z-index:5;
+}
+
+.project-card:hover::before{
+left:160%;
+}
+
+/*==============================
+Project Image Shadow
+==============================*/
+
+.project-card:hover .project-image img{
+
+box-shadow:
+0 20px 40px rgba(0,0,0,.35);
+
+}
+
+/*==============================
+Tech Badge Animation
+==============================*/
+
+.project-tech span{
+
+transition:.4s;
+
+}
+
+.project-tech span:hover{
+
+transform:
+translateY(-5px)
+scale(1.05);
+
+}
+
+/*==============================
+Featured Badge
+==============================*/
+
+.project-featured{
+
+animation:pulse 2s infinite;
+
+}
