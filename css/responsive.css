@@ -620,3 +620,31 @@ gap:8px;
 }
 
 }
+/*============================== Responsive Experience ==============================*/
+
+@media screen and (max-width:992px){
+
+.experience-wrapper{
+grid-template-columns:1fr;
+}
+
+}
+
+@media screen and (max-width:576px){
+
+.experience-footer{
+flex-direction:column;
+gap:12px;
+}
+
+.experience-icon{
+width:75px;
+height:75px;
+font-size:1.8rem;
+}
+
+.experience-card{
+padding:30px 20px;
+}
+
+}
