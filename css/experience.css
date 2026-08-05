@@ -169,3 +169,15 @@ z-index:-1;
 .experience-card:hover::after{
 opacity:.6;
 }
+.experience-card{
+transform-style:preserve-3d;
+perspective:1000px;
+}
+
+.experience-card:hover{
+transform:
+translateY(-18px)
+rotateX(6deg)
+rotateY(-6deg)
+scale(1.03);
+}
