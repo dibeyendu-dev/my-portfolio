@@ -181,3 +181,27 @@ rotateX(6deg)
 rotateY(-6deg)
 scale(1.03);
 }
+.experience-tech{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:10px;
+margin:25px 0;
+}
+
+.experience-tech span{
+padding:8px 16px;
+border-radius:30px;
+background:rgba(255,255,255,.06);
+border:1px solid rgba(255,255,255,.1);
+font-size:.82rem;
+font-weight:500;
+color:var(--text-light);
+transition:var(--transition);
+}
+
+.experience-tech span:hover{
+background:linear-gradient(135deg,var(--primary-color),var(--secondary-color));
+color:#fff;
+transform:translateY(-3px);
+}
