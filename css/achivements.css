@@ -177,3 +177,15 @@ z-index:-1;
 .achievement-card:hover::after{
 opacity:.6;
 }
+.achievement-card{
+transform-style:preserve-3d;
+perspective:1200px;
+}
+
+.achievement-card:hover{
+transform:
+translateY(-18px)
+rotateX(6deg)
+rotateY(-6deg)
+scale(1.03);
+}
