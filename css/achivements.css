@@ -37,3 +37,14 @@ bottom:-150px;
 right:-150px;
 animation-delay:3s;
 }
+.achievements .container{
+position:relative;
+z-index:2;
+}
+
+.achievements-wrapper{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:30px;
+margin-top:80px;
+}
