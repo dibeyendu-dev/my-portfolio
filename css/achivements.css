@@ -78,3 +78,12 @@ transparent
 );
 transition:.8s;
 }
+.achievement-card:hover::before{
+left:100%;
+}
+
+.achievement-card:hover{
+transform:translateY(-15px);
+border-color:var(--primary-color);
+box-shadow:0 25px 60px rgba(99,102,241,.35);
+}
