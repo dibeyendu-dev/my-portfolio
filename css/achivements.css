@@ -135,3 +135,25 @@ line-height:1;
 .achievement-card .counter::after{
 content:"+";
 }
+.achievement-card h4{
+font-size:1.35rem;
+font-weight:700;
+margin-bottom:15px;
+color:var(--text-color);
+transition:var(--transition);
+}
+
+.achievement-card:hover h4{
+color:var(--primary-color);
+}
+
+.achievement-card p{
+font-size:.95rem;
+line-height:1.8;
+color:var(--text-muted);
+transition:var(--transition);
+}
+
+.achievement-card:hover p{
+color:var(--text-light);
+}
