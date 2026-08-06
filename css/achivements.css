@@ -115,3 +115,23 @@ box-shadow:
 0 0 50px rgba(99,102,241,.35),
 0 0 80px rgba(99,102,241,.2);
 }
+.achievement-card .counter{
+font-size:3rem;
+font-weight:800;
+margin-bottom:10px;
+background:linear-gradient(
+135deg,
+var(--primary-color),
+var(--secondary-color),
+var(--accent-color)
+);
+background-size:300% 300%;
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+animation:gradientMove 6s ease infinite;
+line-height:1;
+}
+
+.achievement-card .counter::after{
+content:"+";
+}
