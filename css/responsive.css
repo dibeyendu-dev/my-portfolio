@@ -648,3 +648,66 @@ padding:30px 20px;
 }
 
 }
+/*============================== Responsive Achievements ==============================*/
+
+@media screen and (max-width:1200px){
+
+.achievements-wrapper{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media screen and (max-width:768px){
+
+.achievements-wrapper{
+
+grid-template-columns:1fr;
+
+}
+
+.achievement-card{
+
+padding:35px 25px;
+
+}
+
+.achievement-icon{
+
+width:80px;
+height:80px;
+font-size:2rem;
+
+}
+
+.achievement-card .counter{
+
+font-size:2.5rem;
+
+}
+
+}
+
+@media screen and (max-width:576px){
+
+.achievement-card{
+
+padding:30px 20px;
+
+}
+
+.achievement-card h4{
+
+font-size:1.2rem;
+
+}
+
+.achievement-card p{
+
+font-size:.9rem;
+
+}
+
+}
