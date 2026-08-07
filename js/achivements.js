@@ -1,53 +1,53 @@
 /*============================== Achievement Counter ==============================*/
 
-const counters=document.querySelectorAll(".counter");
+const counters = document.querySelectorAll(".counter");
 
-const counterObserver=new IntersectionObserver((entries)=>{
+const counterObserver = new IntersectionObserver((entries) => {
 
-entries.forEach((entry)=>{
+    entries.forEach((entry) => {
 
-if(entry.isIntersecting){
+        if (entry.isIntersecting) {
 
-const counter=entry.target;
+            const counter = entry.target;
 
-const target=+counter.getAttribute("data-target");
+            const target = +counter.getAttribute("data-target");
 
-let count=0;
+            let count = 0;
 
-const speed=target/80;
+            const speed = target / 80;
 
-const updateCounter=()=>{
+            const updateCounter = () => {
 
-count+=speed;
+                count += speed;
 
-if(count<target){
+                if (count < target) {
 
-counter.innerText=Math.ceil(count);
+                    counter.innerText = Math.ceil(count);
 
-requestAnimationFrame(updateCounter);
+                    requestAnimationFrame(updateCounter);
 
-}else{
+                } else {
 
-counter.innerText=target;
+                    counter.innerText = target;
 
-}
+                }
 
-};
+            };
 
-updateCounter();
+            updateCounter();
 
-counterObserver.unobserve(counter);
+            counterObserver.unobserve(counter);
 
-}
+        }
 
+    });
+
+}, {
+    threshold: .5
 });
 
-},{
-threshold:.5
-});
+counters.forEach((counter) => {
 
-counters.forEach((counter)=>{
-
-counterObserver.observe(counter);
+    counterObserver.observe(counter);
 
 });
