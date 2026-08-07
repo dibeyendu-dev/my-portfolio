@@ -37,3 +37,14 @@ bottom:-150px;
 right:-150px;
 animation-delay:3s;
 }
+.services .container{
+position:relative;
+z-index:2;
+}
+
+.services-wrapper{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:35px;
+margin-top:80px;
+}
