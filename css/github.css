@@ -184,3 +184,18 @@ var(--secondary-color)
 font-size:.9rem;
 color:var(--text-muted);
 }
+.github-card .btn{
+display:inline-flex;
+align-items:center;
+gap:10px;
+padding:16px 36px;
+font-size:1rem;
+font-weight:600;
+border-radius:50px;
+transition:var(--transition);
+}
+
+.github-card .btn:hover{
+transform:translateY(-6px);
+box-shadow:0 15px 35px rgba(99,102,241,.35);
+}
