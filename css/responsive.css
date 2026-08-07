@@ -711,3 +711,20 @@ font-size:.9rem;
 }
 
 }
+/*==============================Responsive GitHub ==============================*/
+
+@media screen and (max-width:992px){
+
+.github-card{
+
+padding:45px 35px;
+
+}
+
+.github-info{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
