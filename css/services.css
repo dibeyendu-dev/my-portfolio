@@ -13,3 +13,27 @@ height:100%;
 overflow:hidden;
 z-index:1;
 }
+.services-circle{
+position:absolute;
+border-radius:50%;
+filter:blur(120px);
+opacity:.25;
+animation:float 8s ease-in-out infinite;
+}
+
+.services-circle.circle-1{
+width:350px;
+height:350px;
+background:var(--primary-color);
+top:-120px;
+left:-120px;
+}
+
+.services-circle.circle-2{
+width:450px;
+height:450px;
+background:var(--secondary-color);
+bottom:-150px;
+right:-150px;
+animation-delay:3s;
+}
