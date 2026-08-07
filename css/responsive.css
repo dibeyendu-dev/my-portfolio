@@ -728,3 +728,46 @@ grid-template-columns:repeat(2,1fr);
 }
 
 }
+@media screen and (max-width:768px){
+
+.github-logo{
+
+width:100px;
+height:100px;
+font-size:3rem;
+
+}
+
+.github-card h3{
+
+font-size:1.8rem;
+
+}
+
+.github-card h4{
+
+font-size:1rem;
+
+}
+
+.github-card p{
+
+font-size:.95rem;
+
+}
+
+.github-info{
+
+grid-template-columns:1fr;
+
+gap:15px;
+
+}
+
+.github-box{
+
+padding:20px;
+
+}
+
+}
