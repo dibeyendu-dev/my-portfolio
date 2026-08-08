@@ -139,3 +139,23 @@ transition:var(--transition);
 .service-card:hover p{
 color:var(--text-light);
 }
+.service-card::after{
+content:"";
+position:absolute;
+inset:-2px;
+border-radius:25px;
+background:linear-gradient(
+135deg,
+var(--primary-color),
+var(--secondary-color),
+var(--accent-color)
+);
+opacity:0;
+filter:blur(20px);
+transition:.5s;
+z-index:-1;
+}
+
+.service-card:hover::after{
+opacity:.6;
+}
