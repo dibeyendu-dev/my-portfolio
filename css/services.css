@@ -159,3 +159,16 @@ z-index:-1;
 .service-card:hover::after{
 opacity:.6;
 }
+/* .service-card{
+transform-style:preserve-3d;
+perspective:1200px;
+}
+
+.service-card:hover{
+transform:
+translateY(-18px)
+rotateX(6deg)
+rotateY(-6deg)
+scale(1.03);
+} */
+ 
