@@ -174,3 +174,15 @@ z-index:-1;
 .testimonial-card:hover::after{
 opacity:.6;
 }
+.testimonial-card{
+transform-style:preserve-3d;
+perspective:1200px;
+}
+
+.testimonial-card:hover{
+transform:
+translateY(-18px)
+rotateX(6deg)
+rotateY(-6deg)
+scale(1.03);
+}
