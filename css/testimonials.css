@@ -128,3 +128,18 @@ color:var(--primary-color);
 font-size:.9rem;
 color:var(--text-muted);
 }
+.testimonial-stars{
+display:flex;
+gap:6px;
+margin-bottom:20px;
+}
+
+.testimonial-stars i{
+color:#FFD43B;
+font-size:1rem;
+transition:var(--transition);
+}
+
+.testimonial-card:hover .testimonial-stars i{
+transform:scale(1.2);
+}
