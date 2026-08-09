@@ -143,3 +143,14 @@ transition:var(--transition);
 .testimonial-card:hover .testimonial-stars i{
 transform:scale(1.2);
 }
+.testimonial-card p{
+font-size:.95rem;
+line-height:1.8;
+color:var(--text-muted);
+font-style:italic;
+transition:var(--transition);
+}
+
+.testimonial-card:hover p{
+color:var(--text-light);
+}
