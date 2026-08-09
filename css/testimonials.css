@@ -29,3 +29,23 @@ background:var(--primary-color);
 top:-120px;
 left:-120px;
 }
+.testimonials-circle.circle-2{
+width:450px;
+height:450px;
+background:var(--secondary-color);
+bottom:-150px;
+right:-150px;
+animation-delay:3s;
+}
+
+.testimonials .container{
+position:relative;
+z-index:2;
+}
+
+.testimonials-wrapper{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:35px;
+margin-top:80px;
+}
