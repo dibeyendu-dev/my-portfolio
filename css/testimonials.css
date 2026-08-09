@@ -112,3 +112,19 @@ box-shadow:
 0 0 25px rgba(99,102,241,.5),
 0 0 45px rgba(99,102,241,.3);
 }
+.testimonial-profile h3{
+font-size:1.3rem;
+font-weight:700;
+color:var(--text-color);
+margin-bottom:5px;
+transition:var(--transition);
+}
+
+.testimonial-card:hover .testimonial-profile h3{
+color:var(--primary-color);
+}
+
+.testimonial-profile span{
+font-size:.9rem;
+color:var(--text-muted);
+}
