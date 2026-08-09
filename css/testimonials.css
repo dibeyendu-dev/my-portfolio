@@ -14,3 +14,18 @@ height:100%;
 overflow:hidden;
 z-index:1;
 }
+.testimonials-circle{
+position:absolute;
+border-radius:50%;
+filter:blur(120px);
+opacity:.25;
+animation:float 8s ease-in-out infinite;
+}
+
+.testimonials-circle.circle-1{
+width:350px;
+height:350px;
+background:var(--primary-color);
+top:-120px;
+left:-120px;
+}
