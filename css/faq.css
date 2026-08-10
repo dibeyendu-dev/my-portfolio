@@ -80,3 +80,9 @@ transition:.8s;
 .faq-item:hover::before{
 left:100%;
 }
+.faq-item:hover{
+transform:translateY(-8px);
+border-color:var(--primary-color);
+box-shadow:
+0 20px 50px rgba(99,102,241,.35);
+}
