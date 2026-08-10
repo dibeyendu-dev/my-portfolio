@@ -885,3 +885,52 @@ justify-content:center;
 }
 
 }
+/*============================== Responsive FAQ ==============================*/
+
+@media screen and (max-width:768px){
+
+.faq-wrapper{
+margin-top:60px;
+}
+
+.faq-question{
+padding:22px;
+}
+
+.faq-question h3{
+font-size:1rem;
+padding-right:15px;
+}
+
+.faq-question i{
+width:40px;
+height:40px;
+font-size:.9rem;
+}
+
+.faq-item.active .faq-answer{
+padding:0 22px 22px;
+}
+
+.faq-answer{
+padding:0 22px;
+}
+
+}
+
+@media screen and (max-width:576px){
+
+.faq-question{
+padding:20px;
+}
+
+.faq-question h3{
+font-size:.95rem;
+}
+
+.faq-answer p{
+font-size:.9rem;
+line-height:1.8;
+}
+
+}
