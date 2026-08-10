@@ -934,3 +934,53 @@ line-height:1.8;
 }
 
 }
+/*==============================
+Responsive Contact
+==============================*/
+
+@media screen and (max-width:992px){
+
+.contact-wrapper{
+grid-template-columns:1fr;
+}
+
+}
+
+@media screen and (max-width:768px){
+
+.input-group{
+grid-template-columns:1fr;
+}
+
+.contact-form{
+padding:30px 25px;
+}
+
+.contact-buttons{
+flex-direction:column;
+}
+
+.contact-buttons .btn{
+width:100%;
+justify-content:center;
+}
+
+}
+
+@media screen and (max-width:576px){
+
+.contact-card{
+padding:20px;
+}
+
+.contact-card i{
+width:55px;
+height:55px;
+font-size:1.2rem;
+}
+
+.contact-status{
+font-size:.9rem;
+}
+
+}
