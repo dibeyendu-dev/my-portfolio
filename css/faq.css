@@ -164,3 +164,14 @@ z-index:-1;
 .faq-item:hover::after{
 opacity:.6;
 }
+.faq-item{
+transform-style:preserve-3d;
+perspective:1200px;
+}
+
+.faq-item:hover{
+transform:
+translateY(-8px)
+rotateX(2deg)
+scale(1.01);
+}
