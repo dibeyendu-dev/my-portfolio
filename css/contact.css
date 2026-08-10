@@ -52,3 +52,56 @@ gap:50px;
 margin-top:80px;
 align-items:start;
 }
+.contact-info{
+display:flex;
+flex-direction:column;
+gap:25px;
+}
+
+.contact-card{
+display:flex;
+align-items:center;
+gap:20px;
+padding:25px;
+background:rgba(255,255,255,.05);
+border:1px solid rgba(255,255,255,.08);
+border-radius:20px;
+backdrop-filter:blur(20px);
+-webkit-backdrop-filter:blur(20px);
+transition:var(--transition);
+box-shadow:0 15px 35px rgba(0,0,0,.2);
+}
+
+.contact-card:hover{
+transform:translateX(10px);
+border-color:var(--primary-color);
+box-shadow:0 20px 45px rgba(99,102,241,.35);
+}
+
+.contact-card i{
+width:65px;
+height:65px;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:50%;
+font-size:1.5rem;
+color:#fff;
+background:linear-gradient(
+135deg,
+var(--primary-color),
+var(--secondary-color)
+);
+box-shadow:0 0 20px rgba(99,102,241,.35);
+}
+
+.contact-card h3{
+font-size:1.2rem;
+margin-bottom:6px;
+color:var(--text-color);
+}
+
+.contact-card p{
+color:var(--text-muted);
+font-size:.95rem;
+}
