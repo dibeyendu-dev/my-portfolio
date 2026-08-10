@@ -127,3 +127,20 @@ flex-shrink:0;
 .faq-item.active .faq-question i{
 transform:rotate(45deg);
 }
+.faq-answer{
+max-height:0;
+overflow:hidden;
+transition:max-height .5s ease,padding .5s ease;
+padding:0 30px;
+}
+
+.faq-item.active .faq-answer{
+max-height:250px;
+padding:0 30px 30px;
+}
+
+.faq-answer p{
+font-size:.95rem;
+line-height:1.9;
+color:var(--text-muted);
+}
