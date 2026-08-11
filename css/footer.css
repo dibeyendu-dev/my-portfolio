@@ -70,3 +70,26 @@ line-height:1.9;
 color:var(--text-muted);
 max-width:320px;
 }
+.footer-links h3,
+.footer-contact h3{
+font-size:1.3rem;
+margin-bottom:25px;
+color:var(--text-color);
+}
+
+.footer-links ul{
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+.footer-links ul li a,
+.footer-links ul li{
+color:var(--text-muted);
+transition:var(--transition);
+}
+
+.footer-links ul li a:hover{
+color:var(--primary-color);
+padding-left:8px;
+}
