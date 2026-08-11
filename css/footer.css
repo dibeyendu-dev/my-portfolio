@@ -39,3 +39,34 @@ bottom:-150px;
 right:-150px;
 animation-delay:3s;
 }
+.footer .container{
+position:relative;
+z-index:2;
+}
+
+.footer-wrapper{
+display:grid;
+grid-template-columns:2fr 1fr 1fr 1.5fr;
+gap:50px;
+margin-bottom:60px;
+}
+
+.footer-logo{
+display:inline-flex;
+align-items:center;
+font-size:2.2rem;
+font-weight:800;
+color:var(--text-color);
+margin-bottom:20px;
+}
+
+.footer-logo span{
+color:var(--primary-color);
+}
+
+.footer-about p{
+margin-bottom:30px;
+line-height:1.9;
+color:var(--text-muted);
+max-width:320px;
+}
